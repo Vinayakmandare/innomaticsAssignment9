@@ -1,0 +1,126 @@
+/* Main Container */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4; /* Light background color */
+  min-height: 100vh; /* Full screen height */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Create Form Styling */
+.create_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff; /* White background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;
+  max-width: 400px; /* Maximum width of the form */
+}
+
+.create_form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.create_form input:focus {
+  border-color: #5c6bc0; /* Blue border on focus */
+}
+
+.create_form button {
+  padding: 12px;
+  background-color: #5c6bc0; /* Stylish blue background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create_form button:hover {
+  background-color: #3f51b5; /* Darker blue on hover */
+}
+
+/* Task Item Styling */
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333; /* Dark background */
+  color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 380px; /* Ensure the task container doesn't stretch too much */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease;
+}
+
+.task:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.task .task_text {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.task button {
+  background-color: #f44336; /* Red button for deleting */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Strikethrough Style */
+.line_through {
+  text-decoration: line-through;
+  color: #9e9e9e; /* Gray color for completed tasks */
+}
+
+/* Display Task Styling */
+.display_task {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+input{
+  height: 4vh;
+}
+.checkbox{
+  display: flex;
+
+}
+.icons{
+margin: 20px;
+}
+.icons .icon{
+  padding: 5px;
+}
+.line_through{
+  word-break: break-all;
+  margin-left: 5px;
+}
+.break{
+  word-break: break-all;
+  margin-left: 5px;
+}
